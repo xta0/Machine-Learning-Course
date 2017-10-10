@@ -27,12 +27,13 @@ sigma = zeros(1, size(X, 2));
 %       
 
 
+mu = mean(X);
+sigma = std(X);
 
-
-
-
-
-
+for itor = 1:size(X, 2),
+  sub  = X(:, itor) - mu(itor);
+  X_norm(:, itor) = sub / sigma(itor);
+end
 
 % ============================================================
 

@@ -18,14 +18,13 @@ for iter = 1:num_iters
     %
 
 
+    num_features = size(X,2);
+    h = X*theta;
 
-
-
-
-
-
-
-
+    for j = 1:num_features
+        x = X(:,j);
+        theta(j) = theta(j) - alpha*(1/m)*sum((h-y).* x);
+    end
 
     % ============================================================
 
