@@ -11,7 +11,7 @@ Homework of machine learning course on [Coursera](https://www.coursera.org/learn
 
 The code is writtern in Octave. [Octave](http://www.gnu.org/software/octave/) is a scientific programming language（open sourced） similar to Matlab. If you have matlab installed on your computer, you can also use Maltab for this course. Translation from Octave syntax to Matlab syntax should be easy.
 
-## Cousera Hornor Code
+## [Cousera Hornor Code](https://learner.coursera.help/hc/en-us/articles/209818863-Coursera-Honor-Code)
 
 You need to follow Coursera’s Honor Code to uphold Coursera's standard of academic integrity:
 
