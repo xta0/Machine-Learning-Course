@@ -11,7 +11,14 @@ Homework of machine learning course on [Coursera](https://www.coursera.org/learn
 
 ## Octave
 
-The code is writtern in Octave. [Octave](http://www.gnu.org/software/octave/) is a scientific programming language（open sourced） similar to Matlab. If you have matlab installed on your computer, you can also use Maltab for this course. Translation from Octave syntax to Matlab syntax should be easy.
+The code is writtern in Octave. [Octave](http://www.gnu.org/software/octave/) is a scientific programming language（open sourced） similar to Matlab. If you have matlab installed on your computer, you can also use Maltab for this course. 
+
+For MacOS users you can add `setenv("GNUTERM","qt")` to your `.bashrc` or `.bash_profile` which sets the enviroment for Octave to use plot command.
+
+## Course Notes
+
+I take the course notes for my own personal use, feel free to check it out. Here is the link below:
+[Course Notes](http://xta0.github.io/blog/2017/09/12/ml-stanford/)
 
 ## [Cousera Hornor Code](https://learner.coursera.help/hc/en-us/articles/209818863-Coursera-Honor-Code)
 
