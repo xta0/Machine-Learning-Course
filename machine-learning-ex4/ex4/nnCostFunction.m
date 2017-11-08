@@ -75,7 +75,7 @@ a1 = [ones(m,1), X]; %5000x401
 z2 = a1*Theta1'; %5000x25
 a2 = [ones(m,1), sigmoid(z2)]; %5000x26
 z3 = a2*Theta2';
-a3 =h= sigmoid(z3); %5000x10
+a3 = h = sigmoid(z3); %5000x10
 
 % make Y: 5000x10
 I = eye(num_labels);
@@ -86,18 +86,14 @@ end
 
 % cost function
 J = (1/m)*sum(sum((-Y).*log(h) - (1-Y).*log(1-h), 2));
-% regularization item
-% skip the first column of Theta1 and Theta2 as bias
+% regularization item, skip the first column of Theta1 and Theta2 
 r = (lambda/(2*m))*(sum(sum(Theta1(:, 2:end).^2, 2)) + sum(sum(Theta2(:,2:end).^2, 2)));
 
 % add r
 J = J+r;
 
 %BP Algorithm
-a3 = h;
 d3 = a3 - Y;  % 5000x10
-
-%d2 = (d3*Theta2 .* sigmoidGradient([ones(size(z2, 1), 1) z2]))(:, 2:end); %5000x25
 d2 = (d3*Theta2 .* sigmoidGradient([ones(m,1),z2])); %5000x26
 
 %skip first coloum of d2
