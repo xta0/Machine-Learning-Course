@@ -33,7 +33,7 @@ num_labels = 10;          % 10 labels, from 1 to 10
 fprintf('Loading and Visualizing Data ...\n')
 
 load('ex4data1.mat');
-m = size(X, 1);
+m = size(X, 1); %5000x1
 
 % Randomly select 100 data points to display
 sel = randperm(size(X, 1));

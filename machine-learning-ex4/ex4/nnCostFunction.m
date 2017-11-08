@@ -62,7 +62,54 @@ Theta2_grad = zeros(size(Theta2));
 %               and Theta2_grad from Part 2.
 %
 
+% X:5000x400
+% y:5000x1
+% input_layer_size:400
+% num_labels:10
+% hidden_layer_size:25
+% Theta1: 25x401
+% Theta2: 10x26
 
+% add bias unit
+a1 = [ones(m,1), X]; %5000x401 
+z2 = a1*Theta1'; %5000x25
+a2 = [ones(m,1), sigmoid(z2)]; %5000x26
+z3 = a2*Theta2';
+a3 =h= sigmoid(z3); %5000x10
+
+% make Y: 5000x10
+I = eye(num_labels);
+Y = zeros(m, num_labels);
+for i=1:m
+  Y(i, :)= I(y(i), :);
+end
+
+% cost function
+J = (1/m)*sum(sum((-Y).*log(h) - (1-Y).*log(1-h), 2));
+% regularization item
+% skip the first column of Theta1 and Theta2 as bias
+r = (lambda/(2*m))*(sum(sum(Theta1(:, 2:end).^2, 2)) + sum(sum(Theta2(:,2:end).^2, 2)));
+
+% add r
+J = J+r;
+
+%BP Algorithm
+a3 = h;
+d3 = a3 - Y;  % 5000x10
+
+%d2 = (d3*Theta2 .* sigmoidGradient([ones(size(z2, 1), 1) z2]))(:, 2:end); %5000x25
+d2 = (d3*Theta2 .* sigmoidGradient([ones(m,1),z2])); %5000x26
+
+%skip first coloum of d2
+Delta1 = (1/m) * d2(:,2:end)' * a1; %25x401
+Delta2 = (1/m) * d3'*a2;  %10x26
+
+Theta1_grad = Delta1  + lambda/m .* [zeros(size(Theta1,1), 1) Theta1(:, 2:end)];
+Theta2_grad = Delta2  + lambda/m .* [zeros(size(Theta2,1), 1) Theta2(:, 2:end)];
+
+
+% Unroll gradients
+grad = [Theta1_grad(:) ; Theta2_grad(:)];
 
 
 
