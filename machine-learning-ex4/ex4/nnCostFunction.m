@@ -103,26 +103,6 @@ Delta2 = (1/m) * d3'*a2;  %10x26
 Theta1_grad = Delta1  + lambda/m .* [zeros(size(Theta1,1), 1) Theta1(:, 2:end)];
 Theta2_grad = Delta2  + lambda/m .* [zeros(size(Theta2,1), 1) Theta2(:, 2:end)];
 
-
-% Unroll gradients
-grad = [Theta1_grad(:) ; Theta2_grad(:)];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 % -------------------------------------------------------------
 
 % =========================================================================
