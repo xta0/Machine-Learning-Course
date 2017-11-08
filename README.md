@@ -17,7 +17,7 @@ For MacOS users you can add `setenv("GNUTERM","qt")` to your `.bashrc` or `.bash
 
 ## Course Notes
 
-I take the course notes for my own personal use, feel free to check it out. Here is the link below:
+I took the lecture notes for my own personal use, feel free to check it out. Here is the link below:
 [Course Notes](http://xta0.github.io/blog/2017/09/12/ml-stanford/)
 
 ## [Cousera Hornor Code](https://learner.coursera.help/hc/en-us/articles/209818863-Coursera-Honor-Code)
