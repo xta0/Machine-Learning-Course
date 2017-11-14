@@ -8,6 +8,7 @@ Homework of machine learning course on [Coursera](https://www.coursera.org/learn
 - ex2 : Logistic Regression
 - ex3 : Neural Networks: Representation
 - ex4 : Neural Networks: Learning
+- ex5 : Advice for Applying Machine Learning
 
 ## Octave
 
