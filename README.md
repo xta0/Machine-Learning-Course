@@ -15,7 +15,13 @@ Homework of machine learning course on [Coursera](https://www.coursera.org/learn
 
 The code is writtern in Octave. [Octave](http://www.gnu.org/software/octave/) is a scientific programming language（open sourced） similar to Matlab. If you have matlab installed on your computer, you can also use Maltab for this course. 
 
-For MacOS users you can add `setenv("GNUTERM","qt")` to your `.bashrc` or `.bash_profile` which sets the enviroment for Octave to use plot command.
+For MacOS users Octave can be installed through HomeBrew:
+
+```
+brew install octave
+
+```
+Then open terminal type `ocatve` command. You are ready to go.
 
 ## Course Notes
 
