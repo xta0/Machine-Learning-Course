@@ -9,6 +9,7 @@ Homework of machine learning course on [Coursera](https://www.coursera.org/learn
 - ex3 : Neural Networks: Representation
 - ex4 : Neural Networks: Learning
 - ex5 : Advice for Applying Machine Learning
+- ex6 : Support Vector Machines
 
 ## Octave
 
