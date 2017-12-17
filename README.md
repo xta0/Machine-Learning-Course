@@ -11,6 +11,7 @@ Homework of machine learning course on [Coursera](https://www.coursera.org/learn
 - ex5 : Advice for Applying Machine Learning
 - ex6 : Support Vector Machines
 - ex7 : Unsupervised Learning
+- ex8 : Anomaly Detection and Recommender Systems
 
 ## Octave
 
