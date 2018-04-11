@@ -1,6 +1,6 @@
 # Standford-Machine-Learning-Course
 
-Homework of machine learning course on [Coursera](https://www.coursera.org/learn/machine-learning)
+Homework solutions for the machine learning course on [Coursera](https://www.coursera.org/learn/machine-learning)
 
 ## Contents
 
@@ -15,9 +15,7 @@ Homework of machine learning course on [Coursera](https://www.coursera.org/learn
 
 ## Octave
 
-The code is writtern in Octave. [Octave](http://www.gnu.org/software/octave/) is a scientific programming language（open sourced） similar to Matlab. If you have matlab installed on your computer, you can also use Maltab for this course. 
-
-For MacOS users, Octave can be installed through HomeBrew:
+The code is writtern in Octave. [Octave](http://www.gnu.org/software/octave/) is a scientific programming language（open sourced） similar to Matlab. For MacOS users, Octave can be installed through HomeBrew:
 
 ```
 brew install octave
