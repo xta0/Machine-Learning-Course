@@ -1,4 +1,4 @@
-# Standford-Machine-Learning-Course
+# Cousera-Machine-Learning-Course
 
 Homework solutions for the machine learning course on [Coursera](https://www.coursera.org/learn/machine-learning)
 
